@@ -1,0 +1,22 @@
+PODS:
+  - Masonry (1.0.1)
+  - NIMSDK (2.8.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - Masonry (~> 1.0.0)
+  - NIMSDK
+  - ReactiveCocoa (~> 2.5)
+
+SPEC CHECKSUMS:
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  NIMSDK: 317bc1d8912894c22f33b71ea8d3d202bc3ffd84
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+COCOAPODS: 0.39.0

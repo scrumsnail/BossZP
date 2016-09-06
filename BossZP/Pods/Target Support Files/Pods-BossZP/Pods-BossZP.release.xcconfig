@@ -1,0 +1,8 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/NIMSDK"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/NIMSDK/SDK" $(inherited) "${PODS_ROOT}/NIMSDK/SDK/NIMAVChat" $(inherited) "${PODS_ROOT}/NIMSDK/SDK/Libs" $(inherited) "${PODS_ROOT}/NIMSDK/SDK/Libs" $(inherited) "${PODS_ROOT}/NIMSDK/SDK/Libs" $(inherited) "${PODS_ROOT}/NIMSDK/SDK/Libs" $(inherited) "${PODS_ROOT}/NIMSDK/SDK/NIMAVChat/Libs" $(inherited) "${PODS_ROOT}/NIMSDK/SDK/NIMAVChat/Libs" $(inherited) "${PODS_ROOT}/NIMSDK/SDK/NIMAVChat/Libs" $(inherited) "${PODS_ROOT}/NIMSDK/SDK/NIMAVChat/Libs" $(inherited) "${PODS_ROOT}/NIMSDK/SDK/NIMAVChat/Libs"
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Masonry.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/ReactiveCocoa.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/NIMSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"NIMAVChat" -l"NIMSDK" -l"aacplus" -l"crypto" -l"event" -l"nio" -l"nts" -l"nvs" -l"openh264" -l"opus" -l"sqlite3.0" -l"ssl" -l"stdc++.6.0.9" -l"z" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreMedia" -framework "CoreTelephony" -framework "Masonry" -framework "ReactiveCocoa" -framework "SystemConfiguration" -framework "VideoToolbox"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BossZP
+PODS_ROOT = ${SRCROOT}/Pods
