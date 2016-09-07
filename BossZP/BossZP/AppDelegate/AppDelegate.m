@@ -16,7 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[NIMSDK sharedSDK] registerWithAppID:@"45c6af3c98409b18a84451215d0bdd6e"
+                                  cerName:@"ENTERPRISE"];
     return YES;
 }
 

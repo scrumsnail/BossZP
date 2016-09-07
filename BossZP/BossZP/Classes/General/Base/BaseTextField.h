@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseTextField.h
 //  BossZP
 //
 //  Created by allthings_LuYD on 16/9/6.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface BaseTextField : UITextField
 
+/**左右间距，默认为5*/
+@property (nonatomic,assign)CGFloat horizontalSpace;
 
 @end
-
