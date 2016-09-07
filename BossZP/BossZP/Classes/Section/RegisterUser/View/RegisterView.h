@@ -1,5 +1,5 @@
 //
-//  LoginView.h
+//  RegisterView.h
 //  BossZP
 //
 //  Created by allthings_LuYD on 16/9/7.
@@ -7,16 +7,14 @@
 //
 
 #import "BaseView.h"
-#import "LoginViewModel.h"
 #import "BaseTextField.h"
+#import "RegisterViewModel.h"
 #import "BaseButton.h"
-@interface LoginView : BaseView
+@interface RegisterView : BaseView
 
-@property(nonatomic,strong) LoginViewModel *viewModel;
 @property(nonatomic,strong) BaseTextField *usernameTextField;
 @property(nonatomic,strong) BaseTextField *passwordTextField;
-@property(nonatomic,strong) BaseButton *loginBtn;
-@property(nonatomic,strong) BaseButton *forgetBtn;
+@property(nonatomic,strong) BaseTextField *nikeTextField;
 @property(nonatomic,strong) BaseButton *registerBtn;
-
+@property (nonatomic,strong) RegisterViewModel *viewModel;
 @end

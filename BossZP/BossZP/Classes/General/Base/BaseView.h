@@ -9,5 +9,4 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewProtocol.h"
 @interface BaseView : UIView <BaseViewProtocol>
-
 @end

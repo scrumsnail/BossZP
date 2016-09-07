@@ -24,10 +24,20 @@
 - (void)loginWithUserName:(NSString *)username password:(NSString *)password Success:(Success)success failure:(Failure)failure{
     [[[NIMSDK sharedSDK] loginManager] login:username token:[password MD5String] completion:^(NSError * _Nullable error) {
         if (error == nil) {
+            NSDictionary *dic = @{
+                                  @"username" : username,
+                                  @"password" : password
+                                  };
+            [self saveUsername_password:dic];
             success(@YES);
+
         }else{
             failure(@"登录失败");
         }
     }];
+}
+
+- (void)saveUsername_password:(NSDictionary *)dic{
+    [KeyChain save:KEY_USERNAME_PASSWORD data:dic];
 }
 @end

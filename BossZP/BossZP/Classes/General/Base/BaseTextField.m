@@ -30,4 +30,9 @@
     self.leftView.frame = rect;
 }
 
+- (void)resetTextFieldWithPlaceholder:(NSString *)placeholder{
+    self.placeholder = placeholder;
+    self.backgroundColor = [UIColor colorWithWhite:1 alpha:0.8];
+    self.layer.cornerRadius = 10;
+}
 @end

@@ -10,5 +10,6 @@
 #define AppMacro_h
 #import "KeyChain.h"
 #import "NSString+MD5.h"
+#import "NSDictionary+Json.h"
 
 #endif /* AppMacro_h */

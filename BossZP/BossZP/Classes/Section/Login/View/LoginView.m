@@ -104,9 +104,7 @@
 - (BaseTextField *)usernameTextField {
     if (!_usernameTextField) {
         _usernameTextField = [BaseTextField new];
-        _usernameTextField.placeholder = @"手机号";
-        _usernameTextField.backgroundColor = [UIColor colorWithWhite:1 alpha:0.8];
-        _usernameTextField.layer.cornerRadius = 10;
+        [_usernameTextField resetTextFieldWithPlaceholder:@"用户名"];
     }
     return _usernameTextField;
 }
@@ -114,39 +112,34 @@
 - (BaseTextField *)passwordTextField {
     if (!_passwordTextField) {
         _passwordTextField = [BaseTextField new];
-        _passwordTextField.placeholder = @"密码";
+        [_passwordTextField resetTextFieldWithPlaceholder:@"密码"];
         _passwordTextField.secureTextEntry = YES;
-        _passwordTextField.backgroundColor = [UIColor colorWithWhite:1 alpha:0.8];
-        _passwordTextField.layer.cornerRadius = 10;
     }
     return _passwordTextField;
 }
 
-- (UIButton *)loginBtn {
+- (BaseButton *)loginBtn {
     if (!_loginBtn) {
-        _loginBtn = [UIButton new];
-        [_loginBtn setTitle:@"进入" forState:UIControlStateNormal];
-        [_loginBtn setBackgroundImage:image(@"preRegister") forState:UIControlStateNormal];
-        [_loginBtn setBackgroundImage:image(@"preRegister_s") forState:UIControlStateSelected];
-        _loginBtn.layer.cornerRadius = 10;
+        _loginBtn = [BaseButton new];
+        [_loginBtn resetButtonWithNormalImage:image(@"preRegister") selectedImage:image(@"preRegister_s") title:@"进入"];
     }
     return _loginBtn;
 }
 
-- (UIButton *)registerBtn {
+- (BaseButton *)registerBtn {
     if (!_registerBtn) {
-        _registerBtn = [UIButton new];
-        [_registerBtn setTitle:@"创建一个帐号" forState:UIControlStateNormal];
+        _registerBtn = [BaseButton new];
+        [_registerBtn resetButtonWithNormalImage:nil selectedImage:nil title:@"创建一个帐号"];
         [_registerBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _registerBtn.titleLabel.font = [UIFont boldSystemFontOfSize:BASE_FONT_SIZE];
     }
     return _registerBtn;
 }
 
-- (UIButton *)forgetBtn {
+- (BaseButton *)forgetBtn {
     if (!_forgetBtn) {
-        _forgetBtn = [UIButton new];
-        [_forgetBtn setTitle:@"忘记密码了？" forState:UIControlStateNormal];
+        _forgetBtn = [BaseButton new];
+        [_forgetBtn resetButtonWithNormalImage:nil selectedImage:nil title:@"忘记密码了？"];
         [_forgetBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _forgetBtn.titleLabel.font = [UIFont systemFontOfSize:BASE_FONT_SIZE];
     }

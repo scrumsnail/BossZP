@@ -16,6 +16,13 @@
 		870A61FA1D7FACAC001A9F46 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870A61F91D7FACAC001A9F46 /* RegisterViewController.m */; };
 		870A61FD1D7FAD9B001A9F46 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 870A61FC1D7FAD9B001A9F46 /* NSString+MD5.m */; };
 		870A62001D7FB37B001A9F46 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 870A61FF1D7FB37B001A9F46 /* MainView.m */; };
+		870A62041D7FBCB3001A9F46 /* RegisterTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 870A62031D7FBCB3001A9F46 /* RegisterTask.m */; };
+		870A62071D7FBD29001A9F46 /* RegisterData.m in Sources */ = {isa = PBXBuildFile; fileRef = 870A62061D7FBD29001A9F46 /* RegisterData.m */; };
+		87A022371D7FBF31007686E3 /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A022361D7FBF31007686E3 /* NSDictionary+Json.m */; };
+		87A0223A1D7FC07B007686E3 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A022391D7FC07B007686E3 /* RegisterView.m */; };
+		87A0223D1D7FC094007686E3 /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A0223C1D7FC094007686E3 /* RegisterViewModel.m */; };
+		87A022401D7FC13C007686E3 /* RegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A0223F1D7FC13C007686E3 /* RegisterService.m */; };
+		87A022431D7FDEDB007686E3 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A022421D7FDEDB007686E3 /* BaseButton.m */; };
 		87A3F71E1D7EAE4100094565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F71D1D7EAE4100094565 /* main.m */; };
 		87A3F7271D7EAE4100094565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A3F7251D7EAE4100094565 /* Main.storyboard */; };
 		87A3F72A1D7EAE4100094565 /* BossZP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F7281D7EAE4100094565 /* BossZP.xcdatamodeld */; };
@@ -73,6 +80,21 @@
 		870A61FC1D7FAD9B001A9F46 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		870A61FE1D7FB37B001A9F46 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		870A61FF1D7FB37B001A9F46 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		870A62021D7FBCB3001A9F46 /* RegisterTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTask.h; sourceTree = "<group>"; };
+		870A62031D7FBCB3001A9F46 /* RegisterTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTask.m; sourceTree = "<group>"; };
+		870A62051D7FBD29001A9F46 /* RegisterData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterData.h; sourceTree = "<group>"; };
+		870A62061D7FBD29001A9F46 /* RegisterData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterData.m; sourceTree = "<group>"; };
+		87A022341D7FBDBE007686E3 /* ServiceTaskProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceTaskProtocol.h; sourceTree = "<group>"; };
+		87A022351D7FBF31007686E3 /* NSDictionary+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Json.h"; sourceTree = "<group>"; };
+		87A022361D7FBF31007686E3 /* NSDictionary+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Json.m"; sourceTree = "<group>"; };
+		87A022381D7FC07B007686E3 /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = "<group>"; };
+		87A022391D7FC07B007686E3 /* RegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterView.m; sourceTree = "<group>"; };
+		87A0223B1D7FC094007686E3 /* RegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewModel.h; sourceTree = "<group>"; };
+		87A0223C1D7FC094007686E3 /* RegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewModel.m; sourceTree = "<group>"; };
+		87A0223E1D7FC13C007686E3 /* RegisterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterService.h; sourceTree = "<group>"; };
+		87A0223F1D7FC13C007686E3 /* RegisterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterService.m; sourceTree = "<group>"; };
+		87A022411D7FDEDB007686E3 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		87A022421D7FDEDB007686E3 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
 		87A3F7191D7EAE4100094565 /* BossZP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BossZP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A3F71D1D7EAE4100094565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87A3F7261D7EAE4100094565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -296,6 +318,8 @@
 		870A61E61D7FA3DC001A9F46 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				87A022381D7FC07B007686E3 /* RegisterView.h */,
+				87A022391D7FC07B007686E3 /* RegisterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,8 +336,24 @@
 		870A61E81D7FA3DC001A9F46 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				87A0223B1D7FC094007686E3 /* RegisterViewModel.h */,
+				87A0223C1D7FC094007686E3 /* RegisterViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		870A62011D7FBC78001A9F46 /* RegisterManager */ = {
+			isa = PBXGroup;
+			children = (
+				870A62021D7FBCB3001A9F46 /* RegisterTask.h */,
+				870A62031D7FBCB3001A9F46 /* RegisterTask.m */,
+				870A62051D7FBD29001A9F46 /* RegisterData.h */,
+				870A62061D7FBD29001A9F46 /* RegisterData.m */,
+				87A022341D7FBDBE007686E3 /* ServiceTaskProtocol.h */,
+				87A0223E1D7FC13C007686E3 /* RegisterService.h */,
+				87A0223F1D7FC13C007686E3 /* RegisterService.m */,
+			);
+			path = RegisterManager;
 			sourceTree = "<group>";
 		};
 		87A3F7101D7EAE4100094565 = {
@@ -427,6 +467,8 @@
 				87A3F7791D7EC06E00094565 /* BaseViewModelProtocol.h */,
 				87A3F76C1D7EBE6D00094565 /* BaseTextField.h */,
 				87A3F76D1D7EBE6D00094565 /* BaseTextField.m */,
+				87A022411D7FDEDB007686E3 /* BaseButton.h */,
+				87A022421D7FDEDB007686E3 /* BaseButton.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -436,6 +478,8 @@
 			children = (
 				870A61FB1D7FAD9B001A9F46 /* NSString+MD5.h */,
 				870A61FC1D7FAD9B001A9F46 /* NSString+MD5.m */,
+				87A022351D7FBF31007686E3 /* NSDictionary+Json.h */,
+				87A022361D7FBF31007686E3 /* NSDictionary+Json.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -443,6 +487,7 @@
 		87A3F7591D7EBC5800094565 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				870A62011D7FBC78001A9F46 /* RegisterManager */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -721,20 +766,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				87A3F72A1D7EAE4100094565 /* BossZP.xcdatamodeld in Sources */,
+				87A022371D7FBF31007686E3 /* NSDictionary+Json.m in Sources */,
 				870A61D31D7FA046001A9F46 /* KeyChain.m in Sources */,
 				870A61F11D7FA43E001A9F46 /* LoginViewModel.m in Sources */,
 				87A3F7771D7EBEC500094565 /* BaseViewModel.m in Sources */,
 				87A3F7741D7EBEB800094565 /* BaseViewController.m in Sources */,
+				87A0223D1D7FC094007686E3 /* RegisterViewModel.m in Sources */,
 				870A62001D7FB37B001A9F46 /* MainView.m in Sources */,
 				87A3F71E1D7EAE4100094565 /* main.m in Sources */,
 				870A61EB1D7FA40F001A9F46 /* LoginViewController.m in Sources */,
+				87A0223A1D7FC07B007686E3 /* RegisterView.m in Sources */,
+				870A62071D7FBD29001A9F46 /* RegisterData.m in Sources */,
 				870A61F41D7FAC64001A9F46 /* MainViewController.m in Sources */,
+				87A022431D7FDEDB007686E3 /* BaseButton.m in Sources */,
+				870A62041D7FBCB3001A9F46 /* RegisterTask.m in Sources */,
 				870A61F71D7FAC90001A9F46 /* ForgotViewController.m in Sources */,
 				87A3F7711D7EBEA300094565 /* BaseView.m in Sources */,
 				87A3F76E1D7EBE6D00094565 /* BaseTextField.m in Sources */,
 				870A61FA1D7FACAC001A9F46 /* RegisterViewController.m in Sources */,
 				870A61FD1D7FAD9B001A9F46 /* NSString+MD5.m in Sources */,
 				870A61EE1D7FA42C001A9F46 /* LoginView.m in Sources */,
+				87A022401D7FC13C007686E3 /* RegisterService.m in Sources */,
 				87A3F7691D7EBC5800094565 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

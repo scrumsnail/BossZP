@@ -14,7 +14,7 @@ typedef void(^Error)(NSError * error);
 #define UIScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define UIScreenHeight [UIScreen mainScreen].bounds.size.height
 #define BASE_FONT_SIZE 14
-
+#define KEY_USERNAME_PASSWORD @"BossZP_username_password"
 
 #pragma mark - UIColor宏定义
 #define UIColorFromRGBA(rgbValue, alphaValue) [UIColor \

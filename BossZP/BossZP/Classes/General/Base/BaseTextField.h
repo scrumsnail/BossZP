@@ -12,5 +12,5 @@
 
 /**左右间距，默认为5*/
 @property (nonatomic,assign)CGFloat horizontalSpace;
-
+- (void)resetTextFieldWithPlaceholder:(NSString *)placeholder;
 @end
