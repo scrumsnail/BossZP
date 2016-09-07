@@ -18,8 +18,16 @@
 
 @implementation RegisterViewController
 
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if (self.delegateSignal) {
+        [self.delegateSignal sendNext:@"1"];
+    }
+}
+
 - (void)ss_layoutNavigation{
     USE_CLEAR_BAR
+    NSLog(@"%@",self.r);
 }
 
 - (void)updateViewConstraints{

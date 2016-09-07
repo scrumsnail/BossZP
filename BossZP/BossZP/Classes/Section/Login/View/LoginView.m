@@ -8,6 +8,7 @@
 
 #import "LoginView.h"
 #import "MainViewController.h"
+#import "RegisterViewController.h"
 @implementation LoginView
 
 - (instancetype)initWithViewModel:(id<BaseViewModelProtocol>)viewModel{

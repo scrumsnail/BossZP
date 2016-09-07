@@ -18,6 +18,13 @@
 
 - (void)toRegister{
     UINavigationController *rootNav = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    RegisterViewController *r = [RegisterViewController new];
+    r.r = @"eqeweqe";
+
+    r.delegateSignal = [RACSubject subject];
+    [r.delegateSignal subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
     [rootNav pushViewController:[RegisterViewController new] animated:YES];
 }
 

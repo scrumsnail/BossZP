@@ -9,5 +9,6 @@
 #import "BaseViewController.h"
 
 @interface RegisterViewController : BaseViewController
-
+@property (nonatomic,copy) NSString *r;
+@property (nonatomic,strong) RACSubject *delegateSignal;
 @end
