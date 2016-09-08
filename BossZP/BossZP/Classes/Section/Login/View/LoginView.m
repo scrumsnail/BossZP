@@ -85,7 +85,6 @@
         [self.viewModel toRegister];
     }];
 
-
     [[_forgetBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         @strongify(self)
         [self.viewModel toForgotPassword];

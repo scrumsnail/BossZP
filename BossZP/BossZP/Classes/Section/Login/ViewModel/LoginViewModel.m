@@ -12,20 +12,20 @@
 @implementation LoginViewModel
 
 - (void)toForgotPassword{
-    UINavigationController *rootNav = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    [rootNav pushViewController:[ForgotViewController new] animated:YES];
+    UIViewController *rootNav = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [rootNav presentViewController:[ForgotViewController new] animated:YES completion:nil];
 }
 
 - (void)toRegister{
-    UINavigationController *rootNav = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    RegisterViewController *r = [RegisterViewController new];
-    r.r = @"eqeweqe";
-
-    r.delegateSignal = [RACSubject subject];
-    [r.delegateSignal subscribeNext:^(id x) {
-        NSLog(@"%@",x);
-    }];
-    [rootNav pushViewController:[RegisterViewController new] animated:YES];
+    UIViewController *rootNav = [UIApplication sharedApplication].keyWindow.rootViewController;
+//    RegisterViewController *r = [RegisterViewController new];
+//    r.r = @"eqeweqe";
+//
+//    r.delegateSignal = [RACSubject subject];
+//    [r.delegateSignal subscribeNext:^(id x) {
+//        NSLog(@"%@",x);
+//    }];
+    [rootNav presentViewController:[RegisterViewController new] animated:YES completion:nil];
 }
 
 - (void)loginWithUserName:(NSString *)username password:(NSString *)password Success:(Success)success failure:(Failure)failure{

@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  ViewController.h
 //  BossZP
 //
 //  Created by allthings_LuYD on 16/9/8.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UITabBarController
+@interface ViewController : UIViewController
 
 @end

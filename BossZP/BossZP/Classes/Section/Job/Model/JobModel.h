@@ -1,13 +1,14 @@
 //
-//  MainViewController.h
+//  JobModel.h
 //  BossZP
 //
 //  Created by allthings_LuYD on 16/9/8.
 //  Copyright © 2016年 scrum_snail. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface MainViewController : UITabBarController
+@interface JobModel : NSObject
+@property (nonatomic,copy) NSString *job;
 
 @end

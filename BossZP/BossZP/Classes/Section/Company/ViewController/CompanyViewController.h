@@ -1,13 +1,13 @@
 //
-//  MainViewController.h
+//  CompanyViewController.h
 //  BossZP
 //
 //  Created by allthings_LuYD on 16/9/8.
 //  Copyright © 2016年 scrum_snail. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MainViewController : UITabBarController
+@interface CompanyViewController : BaseViewController
 
 @end

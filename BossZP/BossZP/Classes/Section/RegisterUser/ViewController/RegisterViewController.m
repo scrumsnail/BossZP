@@ -14,6 +14,7 @@
 @property (nonatomic,strong) RegisterViewModel *viewModel;
 @property (nonatomic,strong) UIImageView *backgroundView;
 @property (nonatomic,strong) UIImageView *titleView;
+@property (nonatomic,strong) UIButton *backBtn;
 @end
 
 @implementation RegisterViewController
@@ -26,7 +27,6 @@
 }
 
 - (void)ss_layoutNavigation{
-    USE_CLEAR_BAR
     NSLog(@"%@",self.r);
 }
 
@@ -50,6 +50,13 @@
         make.top.equalTo(weakSelf.titleView).with.offset(120);
     }];
 
+    [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(weakSelf.view).with.offset(20);
+        make.top.equalTo(weakSelf.view).with.offset(30);
+        make.height.equalTo(@30);
+        make.width.equalTo(@30);
+    }];
+
     [super updateViewConstraints];
 }
 
@@ -57,6 +64,7 @@
     [self.view addSubview:self.backgroundView];
     [self.view addSubview:self.mainView];
     [self.view addSubview:self.titleView];
+    [self.view addSubview:self.backBtn];
     [self.view setNeedsUpdateConstraints];
     [self.view updateConstraintsIfNeeded];
 }
@@ -95,4 +103,16 @@
     return _titleView;
 }
 
+- (UIButton *)backBtn{
+    if (!_backBtn) {
+        _backBtn = [UIButton new];
+        [_backBtn setBackgroundImage:image(@"back_cycle") forState:UIControlStateNormal];
+        [_backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _backBtn;
+}
+
+- (void)back{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
